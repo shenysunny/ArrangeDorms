@@ -1,6 +1,6 @@
-###### --创建学生表
-```SQL
- CREATE TABLE tab_student(
+##### 创建学生表 
+ ```mysql
+CREATE TABLE tab_student(
           sd_number     INT(11) NOT NULL  PRIMARY KEY ,
           sd_name       VARCHAR(50) ,                    
           sd_sex        CHAR(1),
@@ -11,8 +11,6 @@
           sd_class      VARCHAR(50) ,
           sd_papers     VARCHAR(50) 
  );
- ```
- 
- 
+```
 
  
