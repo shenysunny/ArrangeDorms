@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ArrangeDorms:war">
+    <output-path>$PROJECT_DIR$/../ArrangeDorms/target</output-path>
+    <root id="archive" name="ArrangeDorms.war">
+      <element id="artifact" artifact-name="ArrangeDorms:war exploded" />
+    </root>
+  </artifact>
+</component>
