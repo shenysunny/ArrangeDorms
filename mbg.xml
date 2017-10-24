@@ -10,7 +10,7 @@
 		</commentGenerator>
 		<!-- 配置数据库连接 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-						connectionURL="jdbc:mysql:///mybatis_db?characterEncoding=UTF-8" userId="root"
+						connectionURL="jdbc:mysql:///arrangedorms?characterEncoding=UTF-8" userId="root"
 						password="1230">
 		</jdbcConnection>
 
