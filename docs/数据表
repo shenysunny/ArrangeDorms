@@ -1,4 +1,5 @@
 ###### --创建学生表
+
 ```SQL
  CREATE TABLE tab_student(
           sd_number     INT(11) NOT NULL  PRIMARY KEY ,
