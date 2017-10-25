@@ -32,12 +32,13 @@
 
 		<!-- 指定dao接口生成的位置，mapper接口 -->
 		<javaClientGenerator type="XMLMAPPER"
-			targetPackage="cn.yrfk.arrangedorms.dao" targetProject=".\src\main\java">
+							 targetPackage="cn.yrfk.arrangedorms.mapper" targetProject=".\src\main\java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 
 
 		<!-- table指定每个表的生成策略 -->
-		<table tableName="tab_emp" domainObjectName="EmpEntity"></table>
+		<table tableName="tab_student" domainObjectName="StudentEntity"></table>
+		<table tableName="tab_administrator" domainObjectName="administratorEntity"></table>
 	</context>
 </generatorConfiguration>
