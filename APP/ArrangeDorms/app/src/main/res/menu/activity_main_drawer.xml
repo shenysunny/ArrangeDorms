@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Character_color"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="性格色彩" />
+        <item
+            android:id="@+id/nav_Dormitory_allocation"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="个人宿舍分配" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="分享" />
+            <item
+                android:id="@+id/nav_Setting"
+                android:icon="@drawable/ic_menu_send"
+                android:title="设置" />
+        </menu>
+    </item>
+
+</menu>
