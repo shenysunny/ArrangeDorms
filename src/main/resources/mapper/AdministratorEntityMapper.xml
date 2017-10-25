@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.yrfk.arrangedorms.mapper.administratorEntityMapper">
-  <resultMap id="BaseResultMap" type="cn.yrfk.arrangedorms.entity.administratorEntity">
+<mapper namespace="cn.yrfk.arrangedorms.mapper.AdministratorEntityMapper">
+  <resultMap id="BaseResultMap" type="cn.yrfk.arrangedorms.entity.AdministratorEntity">
     <id column="ar_number" jdbcType="INTEGER" property="arNumber" />
     <result column="ar_password" jdbcType="VARCHAR" property="arPassword" />
     <result column="ar_name" jdbcType="VARCHAR" property="arName" />
@@ -69,7 +69,7 @@
   <sql id="Base_Column_List">
     ar_number, ar_password, ar_name, ar_jurisdiction, ar_control_limit
   </sql>
-  <select id="selectByExample" parameterType="cn.yrfk.arrangedorms.entity.administratorEntityExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="cn.yrfk.arrangedorms.entity.AdministratorEntityExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -93,19 +93,19 @@
     delete from tab_administrator
     where ar_number = #{arNumber,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="cn.yrfk.arrangedorms.entity.administratorEntityExample">
+  <delete id="deleteByExample" parameterType="cn.yrfk.arrangedorms.entity.AdministratorEntityExample">
     delete from tab_administrator
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="cn.yrfk.arrangedorms.entity.administratorEntity">
+  <insert id="insert" parameterType="cn.yrfk.arrangedorms.entity.AdministratorEntity">
     insert into tab_administrator (ar_number, ar_password, ar_name, 
       ar_jurisdiction, ar_control_limit)
     values (#{arNumber,jdbcType=INTEGER}, #{arPassword,jdbcType=VARCHAR}, #{arName,jdbcType=VARCHAR}, 
       #{arJurisdiction,jdbcType=VARCHAR}, #{arControlLimit,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="cn.yrfk.arrangedorms.entity.administratorEntity">
+  <insert id="insertSelective" parameterType="cn.yrfk.arrangedorms.entity.AdministratorEntity">
     insert into tab_administrator
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="arNumber != null">
@@ -142,7 +142,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="cn.yrfk.arrangedorms.entity.administratorEntityExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="cn.yrfk.arrangedorms.entity.AdministratorEntityExample" resultType="java.lang.Long">
     select count(*) from tab_administrator
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -182,7 +182,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="cn.yrfk.arrangedorms.entity.administratorEntity">
+  <update id="updateByPrimaryKeySelective" parameterType="cn.yrfk.arrangedorms.entity.AdministratorEntity">
     update tab_administrator
     <set>
       <if test="arPassword != null">
@@ -200,7 +200,7 @@
     </set>
     where ar_number = #{arNumber,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="cn.yrfk.arrangedorms.entity.administratorEntity">
+  <update id="updateByPrimaryKey" parameterType="cn.yrfk.arrangedorms.entity.AdministratorEntity">
     update tab_administrator
     set ar_password = #{arPassword,jdbcType=VARCHAR},
       ar_name = #{arName,jdbcType=VARCHAR},

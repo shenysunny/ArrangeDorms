@@ -20,7 +20,7 @@ public class StudentService {
 
     /*修改学生信息*/
     public void updateStudent(StudentEntity student){
-        studentEntityMapper.insert(student);
+        studentEntityMapper.updateByPrimaryKeySelective(student);
     }
 
     /*删除学生信息*/

@@ -1,6 +1,6 @@
 package cn.yrfk.arrangedorms.entity;
 
-public class administratorEntity {
+public class AdministratorEntity {
     private Integer arNumber;
 
     private String arPassword;

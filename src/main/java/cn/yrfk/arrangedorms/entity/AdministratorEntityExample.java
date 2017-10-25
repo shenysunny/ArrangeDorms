@@ -3,14 +3,14 @@ package cn.yrfk.arrangedorms.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class administratorEntityExample {
+public class AdministratorEntityExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public administratorEntityExample() {
+    public AdministratorEntityExample() {
         oredCriteria = new ArrayList<Criteria>();
     }
 
